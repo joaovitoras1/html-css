@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte</h2>
+    <p>O comando <code>document.getElementById('Teste')</code> é escrito em linguagem JavaScript</p><!--tag code para definir uma fonte monoespaçada(mesmo espaçamento para cada letra)-->
+    <!--code não arruma a indentação-->
+    <pre>
+        <code>
+num = int(input('Digite um número'))
+if num % 2 == 0:
+    print(f'O número {num} é PAR')
+else:
+    print(f'O número {num} é ÍMPAR')
+print('Fim do programa')
+        </code>
+    </pre><!--usar quando quiser manter espaçamentos e/ou quebras de linhas//shift + tab para diminuir a margem-->
+
+    <h2>Citações</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p><!--tag Q para citações-->
+    <p>citação:</p>
+    <blockquote cite="endereço do livro aqui">citação aqui</blockquote><!--ficará afastado//cite, se quiser linkar algum site-->
+
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando.</p><!--tag abbr para colocar o significado de siglas(ao passar  o mouse, irá mostrar o significado/Da para formatar isso com CSS)-->
+
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p><!--tag bdo com ltr ou rtl(normal/invertido)-->
+</body>
+</html>
