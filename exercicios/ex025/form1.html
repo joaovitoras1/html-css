@@ -13,10 +13,20 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form>
-        <p>Nome: <input type="text" name="nome" id="nome"></p>
-        <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
-        <p><input type="submit" value="Enviar"></p>
+    <form action="cadastro.php" method="get" autocomplete="off">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p>
+            <input type="submit" value="Enviar"></p>
     </form>
 </body>
 </html>
+
+<!--action - caso não queira o preenchimento automático-->
+<!--o action vai funcionar quando eu pressionar o submit (vai enviar o dado do formulário)-->
+<!--name é mais útil para html e php - id é mais útil para javascript e label-->
+<!--method="get(mostrar na url) post(não mostrar na url)"
+    get = quando os dados não forem sensíveis ou quando você quiser que a url seja compartilhável//limite de 3000 bytes
+    post = quando os dados forem sensíveis(senhas, fotos, vídeos etc), não quer que apareça na url, mais de 3000 bytes ou envios de arquivos (para melhor segurança, é melhor utilizar https)-->
